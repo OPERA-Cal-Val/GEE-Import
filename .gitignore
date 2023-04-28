@@ -1,0 +1,105 @@
+# OS Files
+**/.DS_Store
+**/.DS_Store?
+
+# vscode
+.vscode
+
+# env file
+.env
+
+# Vim files
+*.sw[mnop]
+
+# Notebooks used for presentations
+notebooks_plots/
+
+# Data Files
+*.zip
+*.tar.gz
+
+# .pyenv files
+.python-version
+
+# pytest files
+.pytest_cache/
+
+# Jupyter files
+*.ipynb_checkpoints
+
+# Python build files
+build/
+
+# Rope Files
+.ropeproject/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+# Environments
+.env
+.envrc
+
+# Gdal and other image formats
+*.xml
+*.tif
+*.shp
+*.sbx
+*.sbn
+*.shx
+*.prj
+*.qpj
+*.dbf
+*.cpg
+*.msk
+*.kmz
+*.jpg
+*.wld
+*.geojson
+
+# VRT
+*.vrt
+
+# Log files
+*.log
+
+# CSV files
+*.csv
+
+# Pickle Data
+*.pkl
+
+# joblib pickle
+*.joblib
+
+# Ignore pdf Files
+*.pdf
+
+# Ignore json
+*.json
+
+# Data directories
+data/
+planet_images_cropped/
+
+
+# Add new notebooks
+*.ipynb
+!1-Download_Planet_Imagery.ipynb
+!2a-Crop_Imagery.ipynb
+!2b-Crop_Imagery_Manual.ipynb
+!3-Upload_Classification.ipynb
+!4-Download_Classification.ipynb
+!5-Visualize_Status_of_Validation_Datasets.ipynb
+!6-Compare_HLS_and_boundaries (Optional).ipynb
+!7-Package_DSWx_Database.ipynb
+!8-Commit-Staged-ImageCalc.ipynb
+!a-Planet_Indices_and_Thresholds.ipynb
