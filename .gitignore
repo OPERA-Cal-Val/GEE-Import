@@ -64,6 +64,7 @@ __pycache__/
 *.jpg
 *.wld
 *.geojson
+*.h5
 
 # VRT
 *.vrt
