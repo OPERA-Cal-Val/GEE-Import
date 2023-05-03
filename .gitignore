@@ -95,6 +95,7 @@ planet_images_cropped/
 # Add new notebooks
 *.ipynb
 !RTC/processRTC.ipynb
+!RTC/GCStoGEE-RTC.ipynb
 !2a-Crop_Imagery.ipynb
 !2b-Crop_Imagery_Manual.ipynb
 !3-Upload_Classification.ipynb
