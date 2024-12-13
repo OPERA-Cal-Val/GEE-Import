@@ -24,7 +24,7 @@ def processRTC(s3key,gcskey):
     #os.mkdir('./temp/deflate/')
 
     #Download RTC file
-    print('Downloading RTC File')
+    #print('Downloading RTC File')
     s3 = boto3.client('s3', config=Config(signature_version=UNSIGNED))
     bucket = 'opera-pst-rs-pop1'
     filename = s3key.split('/')[-1]
@@ -32,7 +32,7 @@ def processRTC(s3key,gcskey):
     s3.download_file(bucket, s3key, filepath)
 
     #Change compression to DEFLATE
-    print('Translating compression')
+    #print('Translating compression')
     tempfile = './temp/gtiff32.tif'
     outfile = './temp/cog32deflate.tif'
     gdal_cmd1 = f'gdal_translate -of GTiff -co NBITS=32 {filepath} {tempfile}'
@@ -48,7 +48,7 @@ def processRTC(s3key,gcskey):
         pass_d = 'N'
 
     #Upload to GCS bucket
-    print('Uploading to GCS Bucket')
+    #print('Uploading to GCS Bucket')
     gcskey = gcskey.split('.tif')[0] + f'_{pass_d}.tif'
     gcsbucket = "opera-bucket-rtc"
     upload_blob(gcsbucket,outfile,gcskey)
