@@ -11,9 +11,6 @@
 # Vim files
 *.sw[mnop]
 
-# Notebooks used for presentations
-notebooks_plots/
-
 # Data Files
 *.zip
 *.tar.gz
@@ -90,20 +87,11 @@ __pycache__/
 # Data directories
 data/
 planet_images_cropped/
+downloads/
 
+# old directories
+old/
 
-# Add new notebooks
-*.ipynb
-!RTC/processRTC.ipynb
-!RTC/GCStoGEE-RTC.ipynb
-!CSLC/CSLC-COG-GEE-Collection.ipynb
-!CSLC/convertCSLC.ipynb
-!2a-Crop_Imagery.ipynb
-!2b-Crop_Imagery_Manual.ipynb
-!3-Upload_Classification.ipynb
-!4-Download_Classification.ipynb
-!5-Visualize_Status_of_Validation_Datasets.ipynb
-!6-Compare_HLS_and_boundaries (Optional).ipynb
-!7-Package_DSWx_Database.ipynb
-!8-Commit-Staged-ImageCalc.ipynb
-!a-Planet_Indices_and_Thresholds.ipynb
+# url lists
+*.txt
+
